@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>বীজগণিত</title>
+</head>
+<body>
+    <center>
+    
+    <h1>ক্ষেএফল নির্ণয়</h1>
+
+    <h3>
+        দৈর্ঘ্য <input id="first" type="number"><br><br>
+        প্রস্থ  <input id="second" type="number"> <br>
+       
+        <button class="btn btn-success" onclick="btn()">Result</button><br><br>
+    ক্ষেএফল= <input id="fore" type="number" placeholder="দৈর্ঘ্য x প্রস্থ">
+    </h3><br><hr>
+
+    <h1>বীজগণিত</h1>
+   <h2>মান নির্ণয়</h2> 
+    <h3>
+        <!-- x <input id="five" type="number"><br> -->
+        a <input id="six" type="number"> <br><br>
+        b <input id="seven" type="number"> <br>
+        <button class="btn btn-success" onclick="math()">Result</button><br><br>
+        Formula:(a+b)<sup>2</sup>=a<sup>2</sup>+2ab+b<sup>2</sup> <br>
+        Result= <input id="eight" type="number"><br>
+        Formula:(a+b)<sup>3</sup> =a<sup>3</sup> +b<sup>3</sup> +3ab(a+b) <br>
+       Result= <input id="nine" type="number" >
+    </h3>
+    </center>
+
+
+
+<script>
+   function btn(){
+        var a=Number(document.getElementById('first').value);
+        var b=Number(document.getElementById('second').value);
+       
+        var s= a*b;
+       
+        document.getElementById('fore').value=s;
+   }
+
+   function math(){
+       //var x=Number(document.getElementById('five').value);
+       var a=Number(document.getElementById('six').value);
+       var b=Number(document.getElementById('seven').value);
+       var result= a*a+2*a*b+b*b;
+       var result2= a*a*a+b*b*b+3*a*b*(a+b);
+       document.getElementById('eight').value=result;
+       document.getElementById('nine').value=result2;
+
+   }
+
+</script>
+
+
+</body>
+</html>
